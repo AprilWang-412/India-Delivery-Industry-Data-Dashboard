@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "last_refresh": "2025-01-20 14:30 IST",
+    "refresh_cadence": "Daily (KPIs, Consumer) · Weekly (Merchant, Driver, Comparison)"
+  },
+  "kpis": {
+    "mau": {
+      "value": "74.2M",
+      "delta": "+4.8% MoM · +21.4% YoY"
+    },
+    "dau": {
+      "value": "18.6M",
+      "delta": "+3.2% MoM · +16.8% YoY"
+    },
+    "dau_mau": {
+      "value": "25.1%",
+      "delta": "+0.7pp MoM"
+    }
+  },
+  "risk_signals": {
+    "new_this_week": 2,
+    "items": [
+      {
+        "date": "2025-01-20",
+        "message": "Mumbai: ETA miss complaints rose 18% after evening peak.",
+        "status": "active"
+      },
+      {
+        "date": "2025-01-18",
+        "message": "Delhi NCR: Refund delay mentions climbed 12% week-over-week.",
+        "status": "active"
+      },
+      {
+        "date": "2025-01-16",
+        "message": "Bangalore: Driver incentive volatility mentions accelerated.",
+        "status": "active"
+      },
+      {
+        "date": "2025-01-12",
+        "message": "Cross-city: Promo mismatch incidents remained elevated.",
+        "status": "closed"
+      }
+    ]
+  },
+  "growth_drivers": [
+    { "label": "Convenience demand", "value": "Strong" },
+    { "label": "Quick delivery reliability", "value": "Improving" },
+    { "label": "Discount intensity", "value": "High" },
+    { "label": "Category expansion", "value": "Active" },
+    { "label": "Geographic expansion", "value": "Tier-2 push" },
+    { "label": "Fulfilment density", "value": "Increasing" }
+  ],
+  "decline_drivers": [
+    { "label": "ETA miss rate", "value": "Elevated" },
+    { "label": "Stock-out frequency", "value": "Medium-High" },
+    { "label": "Promo fatigue", "value": "Emerging" },
+    { "label": "Hidden fees", "value": "User concern" },
+    { "label": "Driver dissatisfaction", "value": "Medium" },
+    { "label": "Merchant margin pressure", "value": "High" }
+  ],
+  "consumer": {
+    "volume": {
+      "Blinkit": "18,420",
+      "Instamart": "15,980",
+      "Zepto": "17,240"
+    },
+    "sentiment": {
+      "positive": 52,
+      "neutral": 26,
+      "negative": 22
+    },
+    "top_themes": [
+      "Late delivery / ETA miss",
+      "Out-of-stock replacements",
+      "Refund delay",
+      "Promo mismatch",
+      "Hidden fees"
+    ],
+    "blinkit": [
+      "ETA miss during peak hours",
+      "Out-of-stock substitutions",
+      "Surge fee spikes",
+      "Category-page mismatch"
+    ],
+    "instamart": [
+      "Refund delay",
+      "Promo code not applied",
+      "Missing items in order",
+      "Poor packaging quality"
+    ],
+    "zepto": [
+      "Late delivery",
+      "Stock unavailability",
+      "Customer support unresponsive",
+      "Hidden delivery charges"
+    ]
+  },
+  "merchant": {
+    "sentiment": {
+      "Blinkit": "6.2/10",
+      "Swiggy": "5.8/10",
+      "Zepto": "6.5/10"
+    },
+    "pain_points": {
+      "Commission pressure": "High",
+      "Settlement delay": "Medium",
+      "Promo burden": "High",
+      "Support quality": "Low"
+    },
+    "blinkit": [
+      "High commission cuts margin",
+      "Promo costs not reimbursed timely",
+      "Order volume inconsistent",
+      "Platform support slow"
+    ],
+    "swiggy": [
+      "Commission increased without notice",
+      "Settlement takes 7-10 days",
+      "Traffic quality declining",
+      "Promo ROI unclear"
+    ],
+    "zepto": [
+      "Aggressive commission structure",
+      "Inventory pressure high",
+      "Payout transparency low",
+      "Onboarding support weak"
+    ]
+  },
+  "driver": {
+    "income_satisfaction": {
+      "Blinkit": "5.4/10",
+      "Swiggy": "5.1/10",
+      "Zepto": "5.8/10"
+    },
+    "incentive_volatility": {
+      "Blinkit": "High",
+      "Swiggy": "Very High",
+      "Zepto": "Medium"
+    },
+    "alerts": [
+      "Incentive cuts reported in Mumbai",
+      "Wait time increased in Bangalore",
+      "Penalty frequency rising in Delhi NCR"
+    ],
+    "blinkit": [
+      "Incentive reduced mid-week",
+      "Wait time at dark stores high",
+      "Penalty for late delivery unfair"
+    ],
+    "swiggy": [
+      "Earnings unpredictable",
+      "Surge bonus removed suddenly",
+      "Route allocation unfair",
+      "Support unresponsive"
+    ],
+    "zepto": [
+      "Incentive structure unclear",
+      "Peak hour bonus inconsistent",
+      "Rejection penalty too harsh"
+    ]
+  },
+  "company_comparison": [
+    {
+      "metric": "User Growth Proxy",
+      "blinkit": "Strong",
+      "swiggy": "Moderate",
+      "zepto": "Very Strong"
+    },
+    {
+      "metric": "Consumer Sentiment",
+      "blinkit": "6.8/10",
+      "swiggy": "6.4/10",
+      "zepto": "7.1/10"
+    },
+    {
+      "metric": "Merchant Sentiment",
+      "blinkit": "6.2/10",
+      "swiggy": "5.8/10",
+      "zepto": "6.5/10"
+    },
+    {
+      "metric": "Driver Sentiment",
+      "blinkit": "5.4/10",
+      "swiggy": "5.1/10",
+      "zepto": "5.8/10"
+    },
+    {
+      "metric": "Promo Dependence",
+      "blinkit": "High",
+      "swiggy": "Very High",
+      "zepto": "Medium"
+    },
+    {
+      "metric": "Fulfilment Reliability",
+      "blinkit": "Good",
+      "swiggy": "Moderate",
+      "zepto": "Very Good"
+    },
+    {
+      "metric": "Risk Intensity",
+      "blinkit": "Medium",
+      "swiggy": "High",
+      "zepto": "Low-Medium"
+    }
+  ],
+  "narrative_events": [
+    {
+      "date": "2025-01-18",
+      "tag": "Regulatory",
+      "message": "Karnataka govt proposes gig worker welfare fund; platforms may face 2-3% levy."
+    },
+    {
+      "date": "2025-01-15",
+      "tag": "Competitive",
+      "message": "Zepto announces expansion to 15 new cities in Q1 2025."
+    },
+    {
+      "date": "2025-01-12",
+      "tag": "Labor",
+      "message": "Driver unions in Mumbai demand minimum earnings guarantee."
+    },
+    {
+      "date": "2025-01-08",
+      "tag": "Market",
+      "message": "FMCG brands report 18% sales growth via quick commerce channels."
+    }
+  ],
+  "methodology": {
+    "sources": [
+      "App store reviews (Google Play, iOS)",
+      "Social media mentions (Twitter, Reddit)",
+      "Driver forums and Telegram groups",
+      "Merchant feedback platforms",
+      "News and regulatory filings"
+    ],
+    "update_log": [
+      "2025-01-20: Consumer data refreshed",
+      "2025-01-18: Risk signals updated",
+      "2025-01-15: Company comparison matrix revised",
+      "2025-01-12: Methodology section added"
+    ]
+  }
+}
