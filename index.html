@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India Delivery Intelligence Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <p class="kicker">Research Intelligence Dashboard</p>
+      <h1>India Quick Commerce Monitor</h1>
+      <p class="sub">Blinkit (Zomato) · Swiggy Instamart · Zepto | Mumbai · Delhi NCR · Bangalore</p>
+    </div>
+    <div class="meta">
+      <p><strong>Last refresh:</strong> <span id="meta-last-refresh">--</span></p>
+      <p><strong>Update cadence:</strong> <span id="meta-refresh-cadence">--</span></p>
+      <p><strong>Status:</strong> <span id="meta-runtime-status">--</span></p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid kpi-grid">
+      <article class="card kpi">
+        <h3>MAU (Combined Est.)</h3>
+        <p class="big" id="kpi-mau-value">--</p>
+        <p class="delta" id="kpi-mau-delta">--</p>
+      </article>
+      <article class="card kpi">
+        <h3>DAU (Combined Est.)</h3>
+        <p class="big" id="kpi-dau-value">--</p>
+        <p class="delta" id="kpi-dau-delta">--</p>
+      </article>
+      <article class="card kpi">
+        <h3>Engagement (DAU/MAU)</h3>
+        <p class="big" id="kpi-stickiness-value">--</p>
+        <p class="delta" id="kpi-stickiness-delta">--</p>
+      </article>
+      <article class="card kpi">
+        <h3>Active Risk Signals</h3>
+        <p class="big" id="risk-active-count">--</p>
+        <p class="delta down" id="risk-summary">--</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <div class="head">
+        <h2>Industry Growth vs Decline Drivers</h2>
+        <span class="tag weekly">Weekly</span>
+      </div>
+      <p class="note">Quantitative signals extracted from user/merchant/driver feedback and operational metrics.</p>
+      <div class="grid two">
+        <article class="mini">
+          <h4>Growth Drivers</h4>
+          <ul class="driver-list" id="growth-drivers"></ul>
+        </article>
+        <article class="mini">
+          <h4>Decline Drivers</h4>
+          <ul class="driver-list" id="decline-drivers"></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="head">
+        <h2>Consumer Intelligence</h2>
+        <span class="tag daily">Daily</span>
+      </div>
+      <p class="note">App review scraping: sentiment, complaint themes, platform comparison.</p>
+      <div class="grid three">
+        <article class="mini">
+          <h4>Review Volume (7D)</h4>
+          <ul class="rows" id="consumer-volume"></ul>
+        </article>
+        <article class="mini">
+          <h4>Sentiment Mix</h4>
+          <div class="stack" id="consumer-sentiment"></div>
+        </article>
+        <article class="mini">
+          <h4>Top Complaint Themes</h4>
+          <ol class="topics" id="consumer-themes"></ol>
+        </article>
+      </div>
+      <div class="grid three">
+        <article class="mini">
+          <h4>Blinkit Consumer Complaints</h4>
+          <ol class="topics" id="consumer-blinkit"></ol>
+        </article>
+        <article class="mini">
+          <h4>Instamart Consumer Complaints</h4>
+          <ol class="topics" id="consumer-instamart"></ol>
+        </article>
+        <article class="mini">
+          <h4>Zepto Consumer Complaints</h4>
+          <ol class="topics" id="consumer-zepto"></ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="head">
+        <h2>Merchant Intelligence</h2>
+        <span class="tag weekly">Weekly</span>
+      </div>
+      <p class="note">Restaurant/supplier feedback: commission pressure, traffic quality, payout confidence.</p>
+      <div class="grid two">
+        <article class="mini">
+          <h4>Merchant Sentiment Index</h4>
+          <ul class="rows" id="merchant-sentiment"></ul>
+        </article>
+        <article class="mini">
+          <h4>Pain Point Heat</h4>
+          <div class="heat" id="merchant-pain"></div>
+        </article>
+      </div>
+      <div class="grid three">
+        <article class="mini">
+          <h4>Blinkit Merchant Complaints</h4>
+          <ol class="topics" id="merchant-blinkit"></ol>
+        </article>
+        <article class="mini">
+          <h4>Swiggy Merchant Complaints</h4>
+          <ol class="topics" id="merchant-swiggy"></ol>
+        </article>
+        <article class="mini">
+          <h4>Zepto Merchant Complaints</h4>
+          <ol class="topics" id="merchant-zepto"></ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="head">
+        <h2>Driver Intelligence</h2>
+        <span class="tag weekly">Weekly</span>
+      </div>
+      <p class="note">Driver feedback: earnings stability, incentive volatility, work conditions.</p>
+      <div class="grid three">
+        <article class="mini">
+          <h4>Income Satisfaction</h4>
+          <ul class="rows" id="driver-income"></ul>
+        </article>
+        <article class="mini">
+          <h4>Incentive Volatility</h4>
+          <ul class="rows" id="driver-volatility"></ul>
+        </article>
+        <article class="mini">
+          <h4>Driver Risk Alerts (7D)</h4>
+          <ol class="topics" id="driver-alerts"></ol>
+        </article>
+      </div>
+      <div class="grid three">
+        <article class="mini">
+          <h4>Blinkit Driver Complaints</h4>
+          <ol class="topics" id="driver-blinkit"></ol>
+        </article>
+        <article class="mini">
+          <h4>Swiggy Driver Complaints</h4>
+          <ol class="topics" id="driver-swiggy"></ol>
+        </article>
+        <article class="mini">
+          <h4>Zepto Driver Complaints</h4>
+          <ol class="topics" id="driver-zepto"></ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="head">
+        <h2>Company Comparison Matrix</h2>
+        <span class="tag weekly">Weekly</span>
+      </div>
+      <p class="note">Side-by-side comparison: Blinkit (Zomato), Swiggy, Zepto.</p>
+      <div class="comparison-table-wrap">
+        <table class="comparison-table" id="company-comparison"></table>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="head">
+        <h2>Critical Risk Signals</h2>
+        <span class="tag daily">Daily</span>
+      </div>
+      <p class="note">Early warning system for operational, regulatory, and sentiment deterioration.</p>
+      <ul class="risk-log" id="risk-log"></ul>
+    </section>
+
+    <section class="card">
+      <div class="head">
+        <h2>India Market Events Timeline</h2>
+        <span class="tag daily">Daily</span>
+      </div>
+      <p class="note">Regulatory, competitive, labor, and narrative events affecting the sector.</p>
+      <ul class="event-log" id="india-event-log"></ul>
+    </section>
+
+    <section class="card">
+      <div class="head">
+        <h2>Methodology & Data Integrity</h2>
+        <span class="tag weekly">Governance</span>
+      </div>
+      <p class="note">Data sources, update frequency, confidence levels, and metric definitions.</p>
+      <div class="grid two">
+        <article class="mini">
+          <h4>Data Sources</h4>
+          <ul class="topics" id="methodology-sources"></ul>
+        </article>
+        <article class="mini">
+          <h4>Update Log</h4>
+          <ul class="topics" id="methodology-log"></ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="data/fallback.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
